@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Profile Widget - Blog Example</title>
+    <style>
+        /* Your blog styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .blog-content {
+            margin: 30px 0;
+        }
+        
+        .blog-section {
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <div class="blog-header">
+            <h1>我的技术博客</h1>
+            <p>分享编程经验和Steam游戏心得</p>
+        </div>
+        
+        <div class="blog-content">
+            <div class="blog-section">
+                <h2>关于我</h2>
+                <p>这里是我的一些介绍内容...</p>
+            </div>
+            
+            <!-- Steam Profile Widget 插入位置 -->
+            <div class="blog-section">
+                <h2>我的Steam个人资料</h2>
+                <div id="my-steam-profile" data-steam-id="ANGJustinl"></div>
+            </div>
+            
+            <div class="blog-section">
+                <h2>最新文章</h2>
+                <p>这里是博客文章列表...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 引入Steam Profile Widget -->
+    <script src="steam-profile-widget.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+/* Steam Profile Customization Widget - Performance Optimized */
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #0f1419 0%, #1b2838 50%, #2a475e 100%);
+    background-attachment: fixed;
+    font-family: "Motiva Sans", "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+}
+
+#steam-profile-container {
+    max-width: 850px;
+    margin: 0 auto;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Profile Customization Styles */
+.profile_customization {
+    background: linear-gradient(145deg, #1e2328 0%, #2a475e 50%, #1b2838 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(102, 192, 244, 0.1);
+    border: 1px solid rgba(102, 192, 244, 0.2);
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.profile_customization:hover {
+    transform: translateY(-2px);
+}
+
+.profile_customization_header {
+    background: linear-gradient(145deg, #171a21 0%, #1e2328 100%);
+    color: #c7d5e0;
+    padding: 16px 20px;
+    font-size: 14px;
+    border-bottom: 2px solid rgba(102, 192, 244, 0.3);
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: "Consolas", "Monaco", monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.profile_customization_header:hover {
+    border-bottom-color: rgba(102, 192, 244, 0.5);
+}
+
+.profile_customization_header.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile_customization_block {
+    padding: 24px;
+    background: radial-gradient(ellipse at center, #0e141b 0%, #0a0f14 100%);
+}
+
+.customtext_showcase {
+    background: linear-gradient(145deg, #0e141b 0%, #161b22 100%);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(102, 192, 244, 0.1);
+}
+
+.showcase_content_bg {
+    padding: 20px;
+    color: #c7d5e0;
+    line-height: 1.7;
+    font-size: 13px;
+    font-family: "Consolas", "Monaco", monospace;
+    background: linear-gradient(135deg, transparent 0%, rgba(102, 192, 244, 0.02) 100%);
+}
+
+.showcase_notes {
+    background: inherit;
+}
+
+/* Steam BB Code Styles */
+.bb_h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #66c0f4;
+    margin: 12px 0;
+    display: inline;
+    text-shadow: 0 0 8px rgba(102, 192, 244, 0.4);
+}
+
+.bb_h2 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #beee11;
+    margin: 16px 0 12px 0;
+    display: inline;
+    text-shadow: 0 0 6px rgba(190, 238, 17, 0.4);
+}
+
+.bb_link {
+    color: #66c0f4;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    position: relative;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.bb_link:hover {
+    color: #ffffff;
+    background: rgba(102, 192, 244, 0.1);
+    text-decoration: none;
+}
+
+/* ASCII art and monospace content */
+.showcase_content_bg b {
+    font-family: "Consolas", "Monaco", monospace;
+    white-space: pre;
+    color: #e8f4f8;
+}
+
+/* HR styling */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #66c0f4, transparent);
+    margin: 16px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .profile_customization {
+        margin: 0;
+        border-radius: 8px;
+    }
+    
+    .profile_customization_block {
+        padding: 18px;
+    }
+    
+    .showcase_content_bg {
+        padding: 16px;
+        font-size: 12px;
+    }
+    
+    .profile_customization_header {
+        font-size: 12px;
+        padding: 12px 16px;
+    }
+    
+    .bb_h1 {
+        font-size: 18px;
+    }
+    
+    .bb_h2 {
+        font-size: 15px;
+    }
+}
+
+/* Enhanced Loading Animation */
+.steam-profile-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: linear-gradient(145deg, #1b2838 0%, #2a475e 100%);
+    color: #66c0f4;
+    border-radius: 12px;
+    border: 1px solid rgba(102, 192, 244, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.steam-profile-loading::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(102, 192, 244, 0.1), transparent);
+    animation: scan 2s linear infinite;
+}
+
+.steam-profile-loading::after {
+    content: "🔄 Loading Steam Profile Customization...";
+    animation: pulse 1.5s infinite;
+    z-index: 1;
+    position: relative;
+    font-size: 16px;
+    text-shadow: 0 0 10px rgba(102, 192, 244, 0.5);
+}
+
+/* Optimized Animations - Reduced complexity */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes scan {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+/* Simple Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1b2838;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #66c0f4;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8ed4ff;
+}
+
+/* Disable animations on low-end devices */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
