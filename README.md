@@ -2,7 +2,7 @@
 
 A standalone Steam profile customization widget that can be easily embedded into any website or blog.
 
-中文文档: [README.md](README.md)
+中文文档: [README.md](README-CN.md)
 
 
 ## 🚀 Quick Start
