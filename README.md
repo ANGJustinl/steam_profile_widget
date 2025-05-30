@@ -4,6 +4,7 @@ A standalone Steam profile customization widget that can be easily embedded into
 
 中文文档: [README.md](README-CN.md)
 
+![image](https://github.com/user-attachments/assets/67a84b21-9057-404d-b7e1-41154ebaaa9b)
 
 ## 🚀 Quick Start
 
