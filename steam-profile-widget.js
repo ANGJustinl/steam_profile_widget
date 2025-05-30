@@ -1,7 +1,7 @@
 /**
  * Steam Profile Customization Widget
  * Independent widget for embedding in blogs or websites
- * Usage: <div id="steam-profile-widget" data-steam-id="ANGJustinl"></div>
+ * Usage: <div id="steam-profile-widget" data-steam-id="YourSteamID"></div>
  */
 class SteamProfileWidget {
     constructor(containerId, steamId) {
@@ -296,12 +296,21 @@ class SteamProfileWidget {
     getFallbackContent() {
         return `<div class="spw-profile-customization">
             <div class="spw-profile-customization-header">
-                ☰⠀Steam 社区 :: ANGJustinl⠀⠀⠀⠀⠀    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ─⠀❐⠀✖
+                ☰⠀Steam Community Profile⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ─⠀❐⠀✖
             </div>
             <div class="spw-profile-customization-block">
                 <div class="spw-customtext-showcase">
-                    <div class="spw-showcase-content-bg">
-                        🡸 🡺 ⭮ | 🔒 h​ttp​s​:// steamcоmmunity.cоm/id/ANGJustinl/<br> <hr> <br><div class="spw-bb-h1">🔒 User Profile OS v2.3.3 | 兼容性: Steam Level ∞</div><div class="spw-bb-h2">💾 UserData.sys</div> <b><br>╔═════════════════════════════╗<br>║ [OS Alert] 用户类型检测中...                            ║<br>║ ▶ 物种：应该是人类 (♂)                                  ║<br>║ ▶ 运行时长：18 cycles                                    ║<br>║ ▶ 当前任务：大学-材料科学.exe (85% CPU)  ║<br>║ ▶ 隐藏进程：SteamTools_Ultimate                 ║<br>╚═════════════════════════════╝<br><br>[System Notice] <br>核心驱动偏好加载：<br>✔️ 沙盒引擎.dll<br>✔️ 解密算法.bin<br>✔️ 解密演算.sys<br>⚠️ 注意：耐心模块需定期更新<br><br>[Multiplayer Protocol] <br>✅ 被动社交模式已激活<br>🕹️ 兼容性：CO-OP &gt; PvP<br>🔥 推荐运行：派对游戏</b> <br> <hr> <br><div class="spw-bb-h2">🛠️ Hardware Diagnostics</div> <b><br>[CPU-Z Report]<br>┌──────────────┬──────────────────────┐<br>│ 便携终端                     │ 玄派 星耀 R7-8845H                       │<br>│ GPU Renderer           │ RTX 4070TI Super                          │<br>│ Memory                      │ 32GB DDR5 @4400MHz               │<br>└──────────────┴──────────────────────┘<br><br>[Legacy Device]<br>⚠️ Tesla P40 已进入博物馆模式<br>⚡ 电力供应：长城650W (超频警告！)<br>💾 存储矩阵：4TB (AI模型占98%)</b> <br> <hr> <br><div class="spw-bb-h2">📡 Connection Status</div> <a class="spw-bb-link" href="https://steamcommunity.com/id/ANGJustin/#commentthread_Profile_76561198344849298_area" target="_blank" rel="">📨 收件箱 (新消息待处理)</a> <br>📡 正在监听端口：多人游戏信号..
+                    <div class="spw-showcase-content-bg" style="text-align:center;">
+                        <div class="spw-bb-h1">Profile Unavailable</div>
+                        <br><br>
+                        <div class="spw-bb-h2">No profile data could be loaded.</div>
+                        <br>
+                        <b>
+                        This Steam profile is currently unavailable.<br>
+                        Please check the Steam ID or try again later.
+                        </b>
+                        <br><hr><br>
+                        <div style="color:#66c0f4;">Widget Placeholder</div>
                     </div>
                 </div>
             </div>
